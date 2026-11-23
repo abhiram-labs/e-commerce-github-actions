@@ -1,0 +1,21 @@
+# Goal: To Display two jobs greetings and Title of this github repo
+
+name: Two jobs
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+
+  greet:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Display Hello
+        run: echo "Hello"
+
+  title:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Display Title of Repo
+        run: echo "Repo name is ${{github.event.repository.name}}"
