@@ -3,7 +3,8 @@
 name: Code Lint
 
 on:
-  push:
+  # push:
+  workflow_dispatch:
 
 jobs:
   Code-Linter-and-Test:
